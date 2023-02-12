@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/updatetextView"
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wave"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/updatetextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:text="Sales Details"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/updateimageView"
+        android:layout_width="89dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@drawable/update" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addcardview"
+        android:layout_width="400dp"
+        android:layout_height="475dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatetextView"
+        app:layout_constraintVertical_bias="0.696">
+
+        <ImageButton
+            android:id="@+id/sales_delete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/delete"
+            android:background="@color/white"
+            android:layout_gravity="right"/>
+
+        <ImageButton
+            android:id="@+id/sales_update"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/edit"
+            android:layout_gravity="right"
+            android:layout_marginRight="59dp"/>
+
+
+        <EditText
+            android:id="@+id/addSID"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter sales Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addCID"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Customer Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/cusname"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Ener Name"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addPID"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="230dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Product id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addQA"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addCOST"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="330dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Cost"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+
+
+        <EditText
+            android:id="@+id/adddate"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="380dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Date"
+            android:inputType="date"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Sales ID    :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="130dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Customer ID :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="180dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Name  :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="230dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Product ID  :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="280dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Quantity    :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="330dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Cost        :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Date and time:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/savemsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Click on the edit button again to save your changes"
+            android:layout_marginTop="440dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="invisible"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

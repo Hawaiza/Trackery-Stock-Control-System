@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlayout_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/updatetextView"
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wave"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/updatetextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:text="Product Details"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <ImageView
+        android:id="@+id/updateimageView"
+        android:layout_width="117dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/userproductdetails" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addcardview"
+        android:layout_width="400dp"
+        android:layout_height="475dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/updatetextView"
+        app:layout_constraintVertical_bias="0.781">
+
+
+        <ImageButton
+            android:id="@+id/deleteicon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/pencil"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="90dp"
+            android:background="@color/white"
+            app:srcCompat="@drawable/edit" />
+
+        <EditText
+            android:id="@+id/updateenterid"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter product Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/updateenterquantity"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter product quantity"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/updateentercategory"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter product category"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/updateentercost"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Product cost"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/updateentername"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter prouct name"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="80dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text=" ID              :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="130dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Name        :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="180dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Quantity    :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="230dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Cost           :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="280dp"
+            android:gravity="bottom"
+            android:minHeight="48dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:text="Category    :"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:visibility="invisible"
+            android:layout_marginTop="390dp"
+            android:backgroundTint="@color/dark_green"
+            android:text="UPDATE" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

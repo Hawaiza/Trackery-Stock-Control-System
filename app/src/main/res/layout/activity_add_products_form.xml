@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addconstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9FF">
+
+    <TextView
+        android:id="@+id/addtextView"
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wave"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:text="Add products"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <ImageView
+        android:id="@+id/addimageView"
+        android:layout_width="145dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/add_product_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="315dp"
+        android:layout_height="415dp"
+        android:id="@+id/addcardview"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addtextView"
+        app:layout_constraintVertical_bias="0.876">
+
+        <EditText
+            android:id="@+id/addenterid"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A434E"
+            android:hint="Enter ID"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addentername"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A434E"
+            android:hint="Enter Name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="79dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addenterquantity"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A434E"
+            android:hint="Enter Quantity"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="130dp"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addentercost"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A434E"
+            android:hint="Enter Cost"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="180dp"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addentercategory"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1A434E"
+            android:hint="Enter Category"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:layout_marginTop="240dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/addproductsbutton"
+            android:layout_width="200dp"
+            android:layout_marginTop="315dp"
+            android:layout_height="50dp"
+            android:text="Add products"
+            android:backgroundTint="#1A434E"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

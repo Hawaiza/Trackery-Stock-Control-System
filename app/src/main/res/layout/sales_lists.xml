@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r1"
+    tools:context=".Sales_List">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/l1"
+        android:orientation="vertical"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_green">
+
+            <ImageButton
+                android:id="@+id/viewlist"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:background="@color/dark_green"
+                android:src="@drawable/view"
+                app:layout_constraintBottom_toBottomOf="@+id/users1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="54dp"
+                android:layout_height="55dp"
+                android:background="@color/dark_green"
+                android:src="@drawable/search"
+                app:layout_constraintBottom_toBottomOf="@+id/users1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.985"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"></ImageButton>
+
+            <TextView
+                android:id="@+id/users1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="SALES"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/serach_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="Sales ID"
+                app:layout_constraintEnd_toStartOf="@+id/viewlist"
+                app:layout_constraintTop_toTopOf="parent"
+                app:endIconMode="clear_text"
+                android:visibility="invisible"
+                android:background="@color/dark_green"
+                android:textColor="@color/white"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/search_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_green"
+                    android:textColor="@color/white"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/SalesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="57dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/cream"
+        android:clickable="true"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/cream"
+        app:rippleColor="#fbf3ea" />
+
+</RelativeLayout>

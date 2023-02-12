@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/addconstraintlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE9FF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/addtextView"
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:background="@drawable/wave"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addtextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_medium"
+        android:text="Add Sales"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <ImageView
+        android:id="@+id/addimageView"
+        android:layout_width="145dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028"
+        app:srcCompat="@drawable/add_product_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addcardview"
+        android:layout_width="315dp"
+        android:layout_height="415dp"
+        app:cardCornerRadius="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addtextView"
+        app:layout_constraintVertical_bias="0.696">
+
+        <EditText
+            android:id="@+id/addSID"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter sales Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addCID"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Customer Id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addCOST"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="230dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Cost"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addQA"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Quantity"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/addPID"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="#1A434E"
+            android:gravity="center"
+            android:hint="Enter Product id"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+
+        <Button
+            android:id="@+id/adduserbutton"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="#1A434E"
+            android:text="Add Sale record"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
